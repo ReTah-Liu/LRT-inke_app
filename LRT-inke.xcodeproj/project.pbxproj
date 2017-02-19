@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		052CB21B1E5818CC00091239 /* LRTLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 052CB21A1E5818CC00091239 /* LRTLive.m */; };
+		052CB21E1E58193B00091239 /* LRTCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 052CB21D1E58193B00091239 /* LRTCreator.m */; };
+		052CB2211E581E5800091239 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 052CB2201E581E5800091239 /* MJExtensionConfig.m */; };
+		052CB2251E58237F00091239 /* LRTLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 052CB2231E58237F00091239 /* LRTLiveCell.m */; };
+		052CB2261E58237F00091239 /* LRTLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052CB2241E58237F00091239 /* LRTLiveCell.xib */; };
+		052CB22A1E58439A00091239 /* LRTShortVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052CB2281E58439A00091239 /* LRTShortVideoViewController.m */; };
+		052CB22B1E58439B00091239 /* LRTShortVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052CB2291E58439A00091239 /* LRTShortVideoViewController.xib */; };
+		052CB22F1E5843D000091239 /* LRTTalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052CB22D1E5843D000091239 /* LRTTalentViewController.m */; };
+		052CB2301E5843D000091239 /* LRTTalentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052CB22E1E5843D000091239 /* LRTTalentViewController.xib */; };
+		052CB2341E5843FE00091239 /* LRTGoodVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052CB2321E5843FE00091239 /* LRTGoodVoiceViewController.m */; };
+		052CB2351E5843FE00091239 /* LRTGoodVoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052CB2331E5843FE00091239 /* LRTGoodVoiceViewController.xib */; };
+		054453AF1E5809E60069F41A /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 054453AE1E5809E60069F41A /* HttpTool.m */; };
+		054453B21E580B320069F41A /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 054453B11E580B320069F41A /* UIImageView+SDWebImage.m */; };
+		054453B81E580F420069F41A /* LRTBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 054453B71E580F420069F41A /* LRTBaseHandler.m */; };
+		054453BB1E5811E00069F41A /* LRTLiveHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 054453BA1E5811E00069F41A /* LRTLiveHandler.m */; };
+		055EDCD51E56A73700FA21C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 055EDCD41E56A73700FA21C9 /* main.m */; };
+		055EDCDE1E56A73700FA21C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055EDCDC1E56A73700FA21C9 /* Main.storyboard */; };
+		055EDCE01E56A73700FA21C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055EDCDF1E56A73700FA21C9 /* Assets.xcassets */; };
+		055EDCE31E56A73700FA21C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055EDCE11E56A73700FA21C9 /* LaunchScreen.storyboard */; };
+		055EDD081E56A9E100FA21C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 055EDD021E56A9E100FA21C9 /* AppDelegate.m */; };
+		055EDD0B1E56B3D000FA21C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 055EDD0A1E56B3CF00FA21C9 /* ViewController.m */; };
+		055EDD101E56BED200FA21C9 /* LRTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 055EDD0F1E56BED200FA21C9 /* LRTTabBarViewController.m */; };
+		055EDD131E56BF1A00FA21C9 /* LRTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 055EDD121E56BF1A00FA21C9 /* LRTTabBar.m */; };
+		05BE87441E56D23C002555CD /* LRTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE87431E56D23C002555CD /* LRTBaseViewController.m */; };
+		05BE87481E56D263002555CD /* LRTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE87461E56D263002555CD /* LRTMainViewController.m */; };
+		05BE87491E56D263002555CD /* LRTMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05BE87471E56D263002555CD /* LRTMainViewController.xib */; };
+		05BE874D1E56D27E002555CD /* LRTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE874B1E56D27E002555CD /* LRTMeViewController.m */; };
+		05BE874E1E56D27E002555CD /* LRTMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05BE874C1E56D27E002555CD /* LRTMeViewController.xib */; };
+		05BE87511E56D3D5002555CD /* LRTBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE87501E56D3D5002555CD /* LRTBaseNavViewController.m */; };
+		05BE87551E56E1FA002555CD /* LRTLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE87531E56E1FA002555CD /* LRTLaunchViewController.m */; };
+		05BE87561E56E1FA002555CD /* LRTLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05BE87541E56E1FA002555CD /* LRTLaunchViewController.xib */; };
+		05BE875A1E56ED36002555CD /* LRTFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE87581E56ED36002555CD /* LRTFocusViewController.m */; };
+		05BE875B1E56ED36002555CD /* LRTFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05BE87591E56ED36002555CD /* LRTFocusViewController.xib */; };
+		05BE875F1E56ED58002555CD /* LRTHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE875D1E56ED58002555CD /* LRTHotViewController.m */; };
+		05BE87641E56ED8C002555CD /* LRTNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE87621E56ED8C002555CD /* LRTNearViewController.m */; };
+		05BE87651E56ED8C002555CD /* LRTNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05BE87631E56ED8C002555CD /* LRTNearViewController.xib */; };
+		05BE87681E56FA79002555CD /* LRTMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE87671E56FA79002555CD /* LRTMainTopView.m */; };
+		080AD8D27D4FE53A2C7C0773 /* libPods-LRT-inke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AC64D1C4DE2BA70072AD4E /* libPods-LRT-inke.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		052CB2191E5818CC00091239 /* LRTLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTLive.h; sourceTree = "<group>"; };
+		052CB21A1E5818CC00091239 /* LRTLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTLive.m; sourceTree = "<group>"; };
+		052CB21C1E58193B00091239 /* LRTCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTCreator.h; sourceTree = "<group>"; };
+		052CB21D1E58193B00091239 /* LRTCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTCreator.m; sourceTree = "<group>"; };
+		052CB21F1E581E5800091239 /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
+		052CB2201E581E5800091239 /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
+		052CB2221E58237F00091239 /* LRTLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTLiveCell.h; sourceTree = "<group>"; };
+		052CB2231E58237F00091239 /* LRTLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTLiveCell.m; sourceTree = "<group>"; };
+		052CB2241E58237F00091239 /* LRTLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRTLiveCell.xib; sourceTree = "<group>"; };
+		052CB2271E58439A00091239 /* LRTShortVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTShortVideoViewController.h; sourceTree = "<group>"; };
+		052CB2281E58439A00091239 /* LRTShortVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTShortVideoViewController.m; sourceTree = "<group>"; };
+		052CB2291E58439A00091239 /* LRTShortVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRTShortVideoViewController.xib; sourceTree = "<group>"; };
+		052CB22C1E5843D000091239 /* LRTTalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTTalentViewController.h; sourceTree = "<group>"; };
+		052CB22D1E5843D000091239 /* LRTTalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTTalentViewController.m; sourceTree = "<group>"; };
+		052CB22E1E5843D000091239 /* LRTTalentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRTTalentViewController.xib; sourceTree = "<group>"; };
+		052CB2311E5843FE00091239 /* LRTGoodVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTGoodVoiceViewController.h; sourceTree = "<group>"; };
+		052CB2321E5843FE00091239 /* LRTGoodVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTGoodVoiceViewController.m; sourceTree = "<group>"; };
+		052CB2331E5843FE00091239 /* LRTGoodVoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRTGoodVoiceViewController.xib; sourceTree = "<group>"; };
+		054453AA1E58026A0069F41A /* APIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		054453AD1E5809E60069F41A /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		054453AE1E5809E60069F41A /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		054453B01E580B320069F41A /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		054453B11E580B320069F41A /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		054453B61E580F420069F41A /* LRTBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTBaseHandler.h; sourceTree = "<group>"; };
+		054453B71E580F420069F41A /* LRTBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTBaseHandler.m; sourceTree = "<group>"; };
+		054453B91E5811E00069F41A /* LRTLiveHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTLiveHandler.h; sourceTree = "<group>"; };
+		054453BA1E5811E00069F41A /* LRTLiveHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTLiveHandler.m; sourceTree = "<group>"; };
+		055EDCD01E56A73700FA21C9 /* LRT-inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LRT-inke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		055EDCD41E56A73700FA21C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		055EDCDD1E56A73700FA21C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		055EDCDF1E56A73700FA21C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		055EDCE21E56A73700FA21C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		055EDCE41E56A73700FA21C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		055EDD011E56A9E100FA21C9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		055EDD021E56A9E100FA21C9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		055EDD091E56B3CF00FA21C9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		055EDD0A1E56B3CF00FA21C9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		055EDD0C1E56B47600FA21C9 /* yingke.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yingke.pch; sourceTree = "<group>"; };
+		055EDD0D1E56BBA700FA21C9 /* LRTMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTMacros.h; sourceTree = "<group>"; };
+		055EDD0E1E56BED200FA21C9 /* LRTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTTabBarViewController.h; sourceTree = "<group>"; };
+		055EDD0F1E56BED200FA21C9 /* LRTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTTabBarViewController.m; sourceTree = "<group>"; };
+		055EDD111E56BF1A00FA21C9 /* LRTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTTabBar.h; sourceTree = "<group>"; };
+		055EDD121E56BF1A00FA21C9 /* LRTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTTabBar.m; sourceTree = "<group>"; };
+		05BE87421E56D23C002555CD /* LRTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTBaseViewController.h; sourceTree = "<group>"; };
+		05BE87431E56D23C002555CD /* LRTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTBaseViewController.m; sourceTree = "<group>"; };
+		05BE87451E56D263002555CD /* LRTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTMainViewController.h; sourceTree = "<group>"; };
+		05BE87461E56D263002555CD /* LRTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTMainViewController.m; sourceTree = "<group>"; };
+		05BE87471E56D263002555CD /* LRTMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRTMainViewController.xib; sourceTree = "<group>"; };
+		05BE874A1E56D27E002555CD /* LRTMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTMeViewController.h; sourceTree = "<group>"; };
+		05BE874B1E56D27E002555CD /* LRTMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTMeViewController.m; sourceTree = "<group>"; };
+		05BE874C1E56D27E002555CD /* LRTMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRTMeViewController.xib; sourceTree = "<group>"; };
+		05BE874F1E56D3D5002555CD /* LRTBaseNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTBaseNavViewController.h; sourceTree = "<group>"; };
+		05BE87501E56D3D5002555CD /* LRTBaseNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTBaseNavViewController.m; sourceTree = "<group>"; };
+		05BE87521E56E1FA002555CD /* LRTLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTLaunchViewController.h; sourceTree = "<group>"; };
+		05BE87531E56E1FA002555CD /* LRTLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTLaunchViewController.m; sourceTree = "<group>"; };
+		05BE87541E56E1FA002555CD /* LRTLaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRTLaunchViewController.xib; sourceTree = "<group>"; };
+		05BE87571E56ED35002555CD /* LRTFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTFocusViewController.h; sourceTree = "<group>"; };
+		05BE87581E56ED36002555CD /* LRTFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTFocusViewController.m; sourceTree = "<group>"; };
+		05BE87591E56ED36002555CD /* LRTFocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRTFocusViewController.xib; sourceTree = "<group>"; };
+		05BE875C1E56ED58002555CD /* LRTHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTHotViewController.h; sourceTree = "<group>"; };
+		05BE875D1E56ED58002555CD /* LRTHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTHotViewController.m; sourceTree = "<group>"; };
+		05BE87611E56ED8C002555CD /* LRTNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTNearViewController.h; sourceTree = "<group>"; };
+		05BE87621E56ED8C002555CD /* LRTNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTNearViewController.m; sourceTree = "<group>"; };
+		05BE87631E56ED8C002555CD /* LRTNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRTNearViewController.xib; sourceTree = "<group>"; };
+		05BE87661E56FA79002555CD /* LRTMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTMainTopView.h; sourceTree = "<group>"; };
+		05BE87671E56FA79002555CD /* LRTMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTMainTopView.m; sourceTree = "<group>"; };
+		21AC64D1C4DE2BA70072AD4E /* libPods-LRT-inke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LRT-inke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		272D063A02D11798152C8A4D /* Pods-LRT-inke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRT-inke.release.xcconfig"; path = "Pods/Target Support Files/Pods-LRT-inke/Pods-LRT-inke.release.xcconfig"; sourceTree = "<group>"; };
+		B8854ED9F061C6E79737A603 /* Pods-LRT-inke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRT-inke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LRT-inke/Pods-LRT-inke.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		055EDCCD1E56A73700FA21C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080AD8D27D4FE53A2C7C0773 /* libPods-LRT-inke.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		027450D8ABDE2F62D9CB3088 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8854ED9F061C6E79737A603 /* Pods-LRT-inke.debug.xcconfig */,
+				272D063A02D11798152C8A4D /* Pods-LRT-inke.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		055EDCC71E56A73700FA21C9 = {
+			isa = PBXGroup;
+			children = (
+				055EDCD21E56A73700FA21C9 /* LRT-inke */,
+				055EDCD11E56A73700FA21C9 /* Products */,
+				027450D8ABDE2F62D9CB3088 /* Pods */,
+				C336EC57EAD35B14CCBE8BF3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		055EDCD11E56A73700FA21C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				055EDCD01E56A73700FA21C9 /* LRT-inke.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		055EDCD21E56A73700FA21C9 /* LRT-inke */ = {
+			isa = PBXGroup;
+			children = (
+				055EDCEA1E56A9E100FA21C9 /* Class */,
+				055EDCD31E56A73700FA21C9 /* Supporting Files */,
+			);
+			path = "LRT-inke";
+			sourceTree = "<group>";
+		};
+		055EDCD31E56A73700FA21C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				055EDCDC1E56A73700FA21C9 /* Main.storyboard */,
+				055EDCDF1E56A73700FA21C9 /* Assets.xcassets */,
+				055EDCE11E56A73700FA21C9 /* LaunchScreen.storyboard */,
+				055EDCE41E56A73700FA21C9 /* Info.plist */,
+				055EDCD41E56A73700FA21C9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		055EDCEA1E56A9E100FA21C9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				055EDCEB1E56A9E100FA21C9 /* Base */,
+				055EDCEC1E56A9E100FA21C9 /* Helper */,
+				055EDCEF1E56A9E100FA21C9 /* Launch */,
+				055EDCF41E56A9E100FA21C9 /* Lib */,
+				055EDCF51E56A9E100FA21C9 /* Live */,
+				055EDCFA1E56A9E100FA21C9 /* Me */,
+				055EDCFF1E56A9E100FA21C9 /* NetWork */,
+				055EDD001E56A9E100FA21C9 /* Other */,
+				055EDD031E56A9E100FA21C9 /* Show */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		055EDCEB1E56A9E100FA21C9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				055EDD0E1E56BED200FA21C9 /* LRTTabBarViewController.h */,
+				055EDD0F1E56BED200FA21C9 /* LRTTabBarViewController.m */,
+				055EDD111E56BF1A00FA21C9 /* LRTTabBar.h */,
+				055EDD121E56BF1A00FA21C9 /* LRTTabBar.m */,
+				05BE87421E56D23C002555CD /* LRTBaseViewController.h */,
+				05BE87431E56D23C002555CD /* LRTBaseViewController.m */,
+				05BE874F1E56D3D5002555CD /* LRTBaseNavViewController.h */,
+				05BE87501E56D3D5002555CD /* LRTBaseNavViewController.m */,
+				054453B61E580F420069F41A /* LRTBaseHandler.h */,
+				054453B71E580F420069F41A /* LRTBaseHandler.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		055EDCEC1E56A9E100FA21C9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				055EDCED1E56A9E100FA21C9 /* Category */,
+				055EDCEE1E56A9E100FA21C9 /* Tools */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		055EDCED1E56A9E100FA21C9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		055EDCEE1E56A9E100FA21C9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		055EDCEF1E56A9E100FA21C9 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				055EDCF01E56A9E100FA21C9 /* Handler */,
+				055EDCF11E56A9E100FA21C9 /* Model */,
+				055EDCF21E56A9E100FA21C9 /* View */,
+				055EDCF31E56A9E100FA21C9 /* ViewController */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		055EDCF01E56A9E100FA21C9 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		055EDCF11E56A9E100FA21C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		055EDCF21E56A9E100FA21C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		055EDCF31E56A9E100FA21C9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		055EDCF41E56A9E100FA21C9 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		055EDCF51E56A9E100FA21C9 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				055EDCF61E56A9E100FA21C9 /* Handler */,
+				055EDCF71E56A9E100FA21C9 /* Model */,
+				055EDCF81E56A9E100FA21C9 /* View */,
+				055EDCF91E56A9E100FA21C9 /* ViewController */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		055EDCF61E56A9E100FA21C9 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		055EDCF71E56A9E100FA21C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		055EDCF81E56A9E100FA21C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		055EDCF91E56A9E100FA21C9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05BE87521E56E1FA002555CD /* LRTLaunchViewController.h */,
+				05BE87531E56E1FA002555CD /* LRTLaunchViewController.m */,
+				05BE87541E56E1FA002555CD /* LRTLaunchViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		055EDCFA1E56A9E100FA21C9 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				055EDCFB1E56A9E100FA21C9 /* Handler */,
+				055EDCFC1E56A9E100FA21C9 /* Model */,
+				055EDCFD1E56A9E100FA21C9 /* View */,
+				055EDCFE1E56A9E100FA21C9 /* ViewController */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		055EDCFB1E56A9E100FA21C9 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		055EDCFC1E56A9E100FA21C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		055EDCFD1E56A9E100FA21C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		055EDCFE1E56A9E100FA21C9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		055EDCFF1E56A9E100FA21C9 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				054453AA1E58026A0069F41A /* APIConfig.h */,
+				054453AD1E5809E60069F41A /* HttpTool.h */,
+				054453AE1E5809E60069F41A /* HttpTool.m */,
+				054453B01E580B320069F41A /* UIImageView+SDWebImage.h */,
+				054453B11E580B320069F41A /* UIImageView+SDWebImage.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		055EDD001E56A9E100FA21C9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				055EDD011E56A9E100FA21C9 /* AppDelegate.h */,
+				055EDD021E56A9E100FA21C9 /* AppDelegate.m */,
+				055EDD091E56B3CF00FA21C9 /* ViewController.h */,
+				055EDD0A1E56B3CF00FA21C9 /* ViewController.m */,
+				055EDD0C1E56B47600FA21C9 /* yingke.pch */,
+				055EDD0D1E56BBA700FA21C9 /* LRTMacros.h */,
+				052CB21F1E581E5800091239 /* MJExtensionConfig.h */,
+				052CB2201E581E5800091239 /* MJExtensionConfig.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		055EDD031E56A9E100FA21C9 /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				055EDD041E56A9E100FA21C9 /* Handler */,
+				055EDD051E56A9E100FA21C9 /* Model */,
+				055EDD061E56A9E100FA21C9 /* View */,
+				055EDD071E56A9E100FA21C9 /* ViewController */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		055EDD041E56A9E100FA21C9 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				054453B91E5811E00069F41A /* LRTLiveHandler.h */,
+				054453BA1E5811E00069F41A /* LRTLiveHandler.m */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		055EDD051E56A9E100FA21C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				052CB2191E5818CC00091239 /* LRTLive.h */,
+				052CB21A1E5818CC00091239 /* LRTLive.m */,
+				052CB21C1E58193B00091239 /* LRTCreator.h */,
+				052CB21D1E58193B00091239 /* LRTCreator.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		055EDD061E56A9E100FA21C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05BE87661E56FA79002555CD /* LRTMainTopView.h */,
+				05BE87671E56FA79002555CD /* LRTMainTopView.m */,
+				052CB2221E58237F00091239 /* LRTLiveCell.h */,
+				052CB2231E58237F00091239 /* LRTLiveCell.m */,
+				052CB2241E58237F00091239 /* LRTLiveCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		055EDD071E56A9E100FA21C9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05BE87451E56D263002555CD /* LRTMainViewController.h */,
+				05BE87461E56D263002555CD /* LRTMainViewController.m */,
+				05BE87471E56D263002555CD /* LRTMainViewController.xib */,
+				05BE874A1E56D27E002555CD /* LRTMeViewController.h */,
+				05BE874B1E56D27E002555CD /* LRTMeViewController.m */,
+				05BE874C1E56D27E002555CD /* LRTMeViewController.xib */,
+				05BE87571E56ED35002555CD /* LRTFocusViewController.h */,
+				05BE87581E56ED36002555CD /* LRTFocusViewController.m */,
+				05BE87591E56ED36002555CD /* LRTFocusViewController.xib */,
+				05BE875C1E56ED58002555CD /* LRTHotViewController.h */,
+				05BE875D1E56ED58002555CD /* LRTHotViewController.m */,
+				05BE87611E56ED8C002555CD /* LRTNearViewController.h */,
+				05BE87621E56ED8C002555CD /* LRTNearViewController.m */,
+				05BE87631E56ED8C002555CD /* LRTNearViewController.xib */,
+				052CB2271E58439A00091239 /* LRTShortVideoViewController.h */,
+				052CB2281E58439A00091239 /* LRTShortVideoViewController.m */,
+				052CB2291E58439A00091239 /* LRTShortVideoViewController.xib */,
+				052CB22C1E5843D000091239 /* LRTTalentViewController.h */,
+				052CB22D1E5843D000091239 /* LRTTalentViewController.m */,
+				052CB22E1E5843D000091239 /* LRTTalentViewController.xib */,
+				052CB2311E5843FE00091239 /* LRTGoodVoiceViewController.h */,
+				052CB2321E5843FE00091239 /* LRTGoodVoiceViewController.m */,
+				052CB2331E5843FE00091239 /* LRTGoodVoiceViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C336EC57EAD35B14CCBE8BF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21AC64D1C4DE2BA70072AD4E /* libPods-LRT-inke.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		055EDCCF1E56A73700FA21C9 /* LRT-inke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055EDCE71E56A73700FA21C9 /* Build configuration list for PBXNativeTarget "LRT-inke" */;
+			buildPhases = (
+				ACD7395F56D7E0982B46221B /* [CP] Check Pods Manifest.lock */,
+				055EDCCC1E56A73700FA21C9 /* Sources */,
+				055EDCCD1E56A73700FA21C9 /* Frameworks */,
+				055EDCCE1E56A73700FA21C9 /* Resources */,
+				AFE91A55545B4123589BED8D /* [CP] Embed Pods Frameworks */,
+				75E359EEF9F6F7381F975A28 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LRT-inke";
+			productName = "LRT-inke";
+			productReference = 055EDCD01E56A73700FA21C9 /* LRT-inke.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		055EDCC81E56A73700FA21C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LRT;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ReTah_Liu;
+				TargetAttributes = {
+					055EDCCF1E56A73700FA21C9 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 055EDCCB1E56A73700FA21C9 /* Build configuration list for PBXProject "LRT-inke" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 055EDCC71E56A73700FA21C9;
+			productRefGroup = 055EDCD11E56A73700FA21C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				055EDCCF1E56A73700FA21C9 /* LRT-inke */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		055EDCCE1E56A73700FA21C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052CB2301E5843D000091239 /* LRTTalentViewController.xib in Resources */,
+				05BE87491E56D263002555CD /* LRTMainViewController.xib in Resources */,
+				055EDCE31E56A73700FA21C9 /* LaunchScreen.storyboard in Resources */,
+				05BE87561E56E1FA002555CD /* LRTLaunchViewController.xib in Resources */,
+				05BE874E1E56D27E002555CD /* LRTMeViewController.xib in Resources */,
+				05BE875B1E56ED36002555CD /* LRTFocusViewController.xib in Resources */,
+				05BE87651E56ED8C002555CD /* LRTNearViewController.xib in Resources */,
+				052CB2351E5843FE00091239 /* LRTGoodVoiceViewController.xib in Resources */,
+				052CB2261E58237F00091239 /* LRTLiveCell.xib in Resources */,
+				055EDCE01E56A73700FA21C9 /* Assets.xcassets in Resources */,
+				052CB22B1E58439B00091239 /* LRTShortVideoViewController.xib in Resources */,
+				055EDCDE1E56A73700FA21C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75E359EEF9F6F7381F975A28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LRT-inke/Pods-LRT-inke-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACD7395F56D7E0982B46221B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFE91A55545B4123589BED8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LRT-inke/Pods-LRT-inke-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		055EDCCC1E56A73700FA21C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BE87441E56D23C002555CD /* LRTBaseViewController.m in Sources */,
+				052CB21E1E58193B00091239 /* LRTCreator.m in Sources */,
+				052CB2211E581E5800091239 /* MJExtensionConfig.m in Sources */,
+				055EDD0B1E56B3D000FA21C9 /* ViewController.m in Sources */,
+				054453B21E580B320069F41A /* UIImageView+SDWebImage.m in Sources */,
+				055EDD101E56BED200FA21C9 /* LRTTabBarViewController.m in Sources */,
+				05BE874D1E56D27E002555CD /* LRTMeViewController.m in Sources */,
+				054453B81E580F420069F41A /* LRTBaseHandler.m in Sources */,
+				05BE87551E56E1FA002555CD /* LRTLaunchViewController.m in Sources */,
+				05BE875F1E56ED58002555CD /* LRTHotViewController.m in Sources */,
+				052CB2251E58237F00091239 /* LRTLiveCell.m in Sources */,
+				055EDD081E56A9E100FA21C9 /* AppDelegate.m in Sources */,
+				05BE87481E56D263002555CD /* LRTMainViewController.m in Sources */,
+				052CB2341E5843FE00091239 /* LRTGoodVoiceViewController.m in Sources */,
+				05BE87641E56ED8C002555CD /* LRTNearViewController.m in Sources */,
+				05BE87511E56D3D5002555CD /* LRTBaseNavViewController.m in Sources */,
+				052CB21B1E5818CC00091239 /* LRTLive.m in Sources */,
+				055EDD131E56BF1A00FA21C9 /* LRTTabBar.m in Sources */,
+				05BE875A1E56ED36002555CD /* LRTFocusViewController.m in Sources */,
+				05BE87681E56FA79002555CD /* LRTMainTopView.m in Sources */,
+				055EDCD51E56A73700FA21C9 /* main.m in Sources */,
+				054453AF1E5809E60069F41A /* HttpTool.m in Sources */,
+				052CB22F1E5843D000091239 /* LRTTalentViewController.m in Sources */,
+				052CB22A1E58439A00091239 /* LRTShortVideoViewController.m in Sources */,
+				054453BB1E5811E00069F41A /* LRTLiveHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		055EDCDC1E56A73700FA21C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				055EDCDD1E56A73700FA21C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		055EDCE11E56A73700FA21C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				055EDCE21E56A73700FA21C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		055EDCE51E56A73700FA21C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		055EDCE61E56A73700FA21C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		055EDCE81E56A73700FA21C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8854ED9F061C6E79737A603 /* Pods-LRT-inke.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LRT-inke/Class/Other/yingke.pch";
+				INFOPLIST_FILE = "LRT-inke/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lrt.LRT-inke";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		055EDCE91E56A73700FA21C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272D063A02D11798152C8A4D /* Pods-LRT-inke.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LRT-inke/Class/Other/yingke.pch";
+				INFOPLIST_FILE = "LRT-inke/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lrt.LRT-inke";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		055EDCCB1E56A73700FA21C9 /* Build configuration list for PBXProject "LRT-inke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055EDCE51E56A73700FA21C9 /* Debug */,
+				055EDCE61E56A73700FA21C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		055EDCE71E56A73700FA21C9 /* Build configuration list for PBXNativeTarget "LRT-inke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055EDCE81E56A73700FA21C9 /* Debug */,
+				055EDCE91E56A73700FA21C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 055EDCC81E56A73700FA21C9 /* Project object */;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LRTMainViewController">
+            <connections>
+                <outlet property="contentScrollView" destination="LdR-If-kNk" id="ByP-d1-ive"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LdR-If-kNk">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="zer-G6-STE"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LdR-If-kNk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BcM-IX-hsf"/>
+                <constraint firstAttribute="trailing" secondItem="LdR-If-kNk" secondAttribute="trailing" id="a5l-78-1dS"/>
+                <constraint firstItem="LdR-If-kNk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="p3r-5B-S5K"/>
+                <constraint firstAttribute="bottom" secondItem="LdR-If-kNk" secondAttribute="bottom" id="zO2-3P-8fb"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

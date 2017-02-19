@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LRTLaunchViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_zbfx" translatesAutoresizingMaskIntoConstraints="NO" id="wQr-AB-EVQ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc8-Gj-Hih">
+                    <rect key="frame" x="536" y="0.0" width="64" height="64"/>
+                    <state key="normal" image="launch_close"/>
+                    <connections>
+                        <action selector="closeLaunch:" destination="-1" eventType="touchUpInside" id="AbN-bk-HvP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wQr-AB-EVQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CS3-y6-A5y"/>
+                <constraint firstItem="wQr-AB-EVQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fkc-GX-jrl"/>
+                <constraint firstAttribute="bottom" secondItem="wQr-AB-EVQ" secondAttribute="bottom" id="HMR-Ge-GC1"/>
+                <constraint firstItem="wQr-AB-EVQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="R10-uB-QsT"/>
+                <constraint firstItem="wQr-AB-EVQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vj8-88-HD9"/>
+                <constraint firstAttribute="trailing" secondItem="Mc8-Gj-Hih" secondAttribute="trailing" id="dVD-a9-Qv5"/>
+                <constraint firstAttribute="trailing" secondItem="wQr-AB-EVQ" secondAttribute="trailing" id="gDH-pn-1JF"/>
+                <constraint firstItem="Mc8-Gj-Hih" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lRq-eB-K4l"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_zbfx" width="250" height="444"/>
+        <image name="launch_close" width="64" height="64"/>
+    </resources>
+</document>
